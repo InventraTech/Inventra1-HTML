@@ -5,7 +5,13 @@ body {
     padding: 0%;
 }
 #corpo{
-    padding-top: 70px;
+    padding-top: 69px;
+}
+#banner_principal{
+    display: flex;
+    width: 100%;
+    height: 375px;
+    background-image: linear-gradient(to right, #360082, #5F1AD2);
 }
 .resp{
     width: 200px;
@@ -27,14 +33,14 @@ body {
 #pt_baixo{
     width: 100%; 
     height: 800px;
-    background-color: rgb(255, 255, 255);
+    background-color:#ffffff;
     padding-top: 23px;
     padding-left: 130px;
     box-sizing: border-box;
     
     }
 #faixa_amarelo{
-    width: 80px;
+    width: 70px;
     height: 800px;
     background-color: #ECC506;
 }
@@ -53,18 +59,10 @@ body {
 #voltar a{
     margin: 0px;
     }
-
-#pai{
-    display: flex;
-    width: 100%;
-    height: 375px;
-    background-image: linear-gradient(to right, #360082, #4C0EAC);
-    }
-
 #texto{
     width: 900px;
     height: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 #texto p{
     font-weight: 600;
@@ -76,12 +74,86 @@ body {
     position: fixed;
     width: 100%;
     height: 70px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     z-index: 1000;
 }
 #relatorio{
-    width: 1210px;
-    height: 560px;
+    display: flex;
+    width: 1215px;
+    height: 580px;
     margin-top: 10px;
-    background-color: #e1e4f4;
+    background-color: #f7f8ff;
+}
+#formulario{
+    box-sizing: border-box;
+    width: 775px;
+    height: 570px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border:2px solid #D5D5D5 ;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0,0.10);
+}
+#avisos{
+    margin-left: 35px;
+    width: 405px;
+    height: 425px;
+}
+.infos{
+    box-sizing: border-box;
+    width: 405px;
+    height: 80px;
+    padding: 13px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0,0.10);
+    margin-bottom: 22px;
+    display: flex;
+}
+.infos p{
+    margin-top: 0px;
+    margin-left: 7px;
+}
+#horario_atend{
+    box-sizing: border-box;
+    width: 405px;
+    height: 119px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0,0.10);
+}
+#hr_cabecalho{
+    box-sizing: border-box;
+    width: 405;
+    height: 45px;
+    background-color: #5301C9;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px 0px 0px 15px;
+    
+}
+#hr_cabecalho p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+#hr_descricao{
+    box-sizing: border-box;
+    width: 405;
+    height: 74px;
+    padding: 10px 0px 0px 15px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 15px 15px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #D5D5D5;
+
+}
+#hr_descricao p{
+    margin: 0;
+    color: #4A4A4A;
+    font-size: 17px;
+    font-weight: 450px;
+}
+#acinzentar{
+    color: #4A4A4A;
 }
