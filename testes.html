@@ -39,7 +39,31 @@
                     <p>Preencha o formulário com alguns dados para que nossa equipe de suporte<br> consiga se contatar e auxiliar-lo em sua ocorrencia</p>
                 </div>
                 <div id ="relatorio">
-                    <div id="formulario"></div>
+                    <form>
+                        <div id="formulario">
+                            <div id="form_cabecalho">
+                                <img src="utils/pessoas_icon.png" width="40px">
+                                <p>Dados do Usuário</p>
+                            </div>
+                            <div id="form_resp">
+                                <label class ="label_padrao_e" for="nome">Nome&nbsp;&nbsp;</label>
+                                <label class="label_padrao_d" for="empresas">Empresas</label><br>
+                                <input type="text" name="nome" class="form_padrao_d" placeholder="Seu nome" required>
+                                <input type="text" name="empresas" class="form_padrao_e" placeholder="Sua empresa" required>
+
+                                <label class="label_padrao_e" for="email">E-mail</label>
+                                <label class="label_padrao_d" for="telefone">Telefone</label><br>
+                                <input type="email" name="email" class="form_padrao_d" placeholder="Seu E-mail" required>
+                                <input type="tel" name="telefone" class="form_padrao_e" placeholder="Seu telefone" required>
+
+                                <label class="label_padrao_e" for="motivo">Como podemos ajudar?</label><br>
+                                <textarea name="motivo" placeholder="Conte um pouco sobre seu desafio, quesionamento ou dúvida..." required></textarea>
+                            </div>
+                            <button id="botao_enviar"type="submit">
+                                Envie sua mensagem <img src="utils/setinha_enviar_icon(2).png" width="18">
+                            </button>
+                        </div> 
+                    </form>
                     <div id="avisos">
                         <div id="email" class="infos">
                             <img src="utils/email_icon.png" width="50px">
