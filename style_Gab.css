@@ -3,6 +3,7 @@ body {
     background-color: white;
     margin: 0%;
     padding: 0%;
+    overflow-x: hidden; 
 }
 #corpo{
     padding-top: 69px;
@@ -16,7 +17,7 @@ body {
 .resp{
     width: 200px;
     height: 50px;                            
-    background-color: burlywood
+    background-color: #ffffff
 }
 .padrao{
     width: 50%; height: 375px;
@@ -31,8 +32,8 @@ body {
     
 }        
 #pt_baixo{
-    width: 100%; 
-    height: 800px;
+    width: 1345px; 
+    height: 917px;
     background-color:#ffffff;
     padding-top: 23px;
     padding-left: 130px;
@@ -41,7 +42,7 @@ body {
     }
 #faixa_amarelo{
     width: 70px;
-    height: 800px;
+    height: 917px;
     background-color: #ECC506;
 }
 #frase{
@@ -49,7 +50,7 @@ body {
     height: 200px;
      margin: 0;
      padding: 50px 0px 30px 130px;
-     color: white;
+     color: #ffffff;
      font-weight:600;
     }
 #voltar p{
@@ -82,6 +83,7 @@ body {
     width: 1215px;
     height: 580px;
     margin-top: 10px;
+    margin-bottom: 70px;
     background-color: #ffffff;
 }
 #formulario{
@@ -92,7 +94,7 @@ body {
     background-color: #ffffff;
     border-radius: 15px;
     border:2px solid #D5D5D5 ;
-    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0,0.10);
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0,0.10);
 }
 #form_resp{
     width: 693px;
@@ -138,11 +140,17 @@ body {
     font-size: 16px;
     font-family: inherit;
 }
+.form_padrao_d:focus{
+    background-color: #ffffff;
+    border: 2px solid #5301C9;   
+    outline: none;
+}
 .form_padrao_e{
     box-sizing: border-box;
     margin: 10px 0px 20px;
     width: 320px;
     height: 35px;
+    background-color: #ffffff;
     border-radius: 10px;
     border:1px solid #ffffff;
     box-shadow: 0px 0px 1.5px 1.5px rgb(0, 0, 0,0.10);
@@ -150,6 +158,11 @@ body {
     padding-right: 10px;
     font-size: 16px;
     font-family: inherit;
+}
+.form_padrao_e:focus{
+    background-color: #ffffff;
+    border: 2px solid #5301C9;   
+    outline: none;
 }
 textarea{
     box-sizing: border-box;
@@ -163,6 +176,11 @@ textarea{
     font-family: inherit;
     font-size: 16px;
     margin-top: 10px    
+}
+textarea:focus{
+    background-color: #ffffff;
+    border: 2px solid #5301C9;   
+    outline: none;
 }
 #botao_enviar{
     display: flex;
@@ -196,7 +214,7 @@ textarea{
     background-color: #ffffff;
     border-radius: 15px;
     border: 1px solid #D5D5D5;
-    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0,0.10);
+    box-shadow: 0px 0px 1.5px 1.5px rgb(0, 0, 0,0.10);
     margin-bottom: 22px;
     display: flex;
 }
@@ -209,7 +227,7 @@ textarea{
     width: 405px;
     height: 119px;
     border-radius: 15px;
-    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0,0.10);
+    box-shadow: 0px 0px 1.5px 1.5px rgb(0, 0, 0,0.10);
 }
 #hr_cabecalho{
     box-sizing: border-box;
@@ -245,4 +263,50 @@ textarea{
 }
 #acinzentar{
     color: #4A4A4A;
+}
+#fotter{
+    display: flex;
+    align-items: center; 
+    box-sizing: border-box;
+    width: 1442px;
+    height: 110px;
+    background-color: #FDFDFD;
+    border-top: 2px solid #D5D5D5;
+    margin-left: -130px;
+    padding: 30px 40px 30px;
+}
+#Term{
+    margin: 0px 39px 0px 255px;
+}
+#Supo{
+    margin: 0px 255px 0px 39px;
+}
+.foot_padrao{
+    color: #5D5D5D;
+    font-weight: 500;
+}
+#meio_circulo{
+    width: 300px;
+    height: 150px;
+    background-color: #5501CC;
+    border-radius: 200px 200px 0px 0px;
+    position: absolute;
+    margin: 500px 0px 0px 1050px;
+    z-index: 1;
+}
+#pp_circulo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5501CC;
+    margin: 450px 0px 0px 1100px;
+}
+#m_circulo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #5501CC;
+    margin: 400px 0px 0px 1220px;
 }
