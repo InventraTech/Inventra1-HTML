@@ -125,7 +125,7 @@ header{
     justify-content: center;
     width: 250px;
     height: 40px;
-    margin: 0 10px 0;
+    margin: 0 5px 0;
     border-radius: 7px;
     font-family: inherit;
     font-weight: 500;
@@ -146,6 +146,10 @@ header{
 #criar_cont:hover{
     background-color: #D1D1D1;
     color: #4A4A4A;
+}
+#criar_cont a{
+    text-decoration: none;
+    color: #7A7A7A;
 }
 form{
     margin-top: 10px;
@@ -176,6 +180,7 @@ form input:focus{
 }
 #entrar_site{
     box-sizing: border-box;
+    margin-top: 20px;
     width: 470px;
     height: 45px;
     border-radius: 10px;
@@ -199,4 +204,7 @@ form input:focus{
 footer{
     text-align: center;
     color: #8B8B8B;
+}
+footer p{
+    margin: 0;
 }

@@ -17,7 +17,7 @@
         <header>
             <a href="#" id="img_voltar"></a>
             <img src="utils/logo_inventra_icon.png" width="65">
-            <h1 id="title">Começe com o <spam id="roxo">Inventra</spam></h1> 
+            <h1 id="title">Comece com o <spam id="roxo">Inventra</spam></h1> 
             <p id="descricao_head">Crie sua conta gratuita ou entre para continuar.</p>          
         </header>
         <button class="botoes_entrar_conta">
@@ -37,7 +37,7 @@
         </div>
         <div id="trocar_de_log">
             <button  id="criar_cont" class="botao_padrao">
-                <p>Criar conta</p>
+                <a href="http://127.0.0.1:5500/Inventra1-HTML/login_criar_cont.html?nome=ewr&email=asdfghj%40dsfghj&senha=12334">Criar conta</a>
             </button>
             <button  id="entra_cont" class="botao_padrao">
                 <p>Entrar</p>
@@ -45,13 +45,15 @@
         </div>
         <form>
             <label for="email">E-mail</label><br>
-            <input  name="email" type="email" placeholder="Digite seu e-mail"><br>
+            <input  name="email" type="email" placeholder="Digite seu e-mail" required><br>
             <label for="senha">Senha</label><br>
-            <input  name="senha" type="password" placeholder="Digite sua senha">
+            <input  name="senha" type="password" placeholder="Digite sua senha" required>
+
+            <button id="entrar_site" type="submit">
+                <p>Criar conta grátis</p>
+            </button>
         </form>
-        <button id="entrar_site">
-            <p>Criar conta grátis</p>
-        </button>
+        
         <footer>
             <p>Ao criar uma conta você concorda com nossos Termos e<br> Política de Privacidade.</p>
         </footer>
