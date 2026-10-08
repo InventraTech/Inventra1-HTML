@@ -28,13 +28,13 @@ header {
 }
 
 /* LOGO */
-.logo img {
+.imagotipo img {
     width: 60px;
     height: auto;
 }
 
 /* NOME DA LOGO */
-.nomeLogo img {
+.logotipo img {
     width: 120px;
     height: auto;
     margin-left: -120px;
