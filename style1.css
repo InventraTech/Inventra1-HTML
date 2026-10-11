@@ -699,3 +699,134 @@ header {
     position: relative;
     z-index: 2;
 }
+
+
+.rodape {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 70px 20px;
+    background: linear-gradient(to right, #360182, #4A149F);
+    color: #FFFFFF;
+    font-family: 'K2D', sans-serif;
+}
+
+.rodapeConteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+
+.rodapeLogo {
+    max-width: 270px;
+}
+
+.rodapeLogo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.rodapeLogo p {
+    color: #DFDFDF;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.rodapeColuna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 250px;
+}
+
+.rodapeColuna h3 {
+    color: #FFDC32;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.rodapeColuna a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.rodapeColuna a:hover {
+    color: #FFDC32;
+}
+
+.rodapeColuna p {
+    color: #DFDFDF;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.rodapeColuna .linkContato {
+    color: #FFDC32;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.rodapeColuna .linkContato:hover {
+    text-decoration: underline;
+}
+
+.rodapeInferior {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.rodapeInferior p {
+    color: #DFDFDF;
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .rodape {
+        padding: 40px 30px 20px;
+    }
+
+    .rodapeConteudo {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .rodapeLogo,
+    .rodapeColuna {
+        flex: 1 1 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .rodape {
+        padding: 35px 22px 20px;
+    }
+
+    .rodapeConteudo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rodapeInferior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
