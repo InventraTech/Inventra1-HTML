@@ -25,7 +25,7 @@ header {
     background-color: #FDFDFD;
     border-bottom: 2px solid #eaeaea;
     z-index: 1000;
-}
+}   
 
 /* LOGO */
 .imagotipo img {
@@ -52,13 +52,12 @@ header {
 .menu a {
     white-space: nowrap;
 
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'K2D', sans-serif;
 
     color: #5D5D5D;
     text-decoration: none;
-
 }
 
 /* BOTÃO DO HEADER */
@@ -69,10 +68,11 @@ header {
     background: linear-gradient(to right, #6732FF, #3E1E99);
     color: white;
 
-    width: 180px;
-    height: 40px;
+    width: 160px;
+    height: 35px;
 
-    font-size: 17px;
+    font-size: 16px;
+    padding-bottom: 3px;
     font-family: 'K2D', sans-serif;
 }
 
@@ -118,7 +118,7 @@ header {
 
 .texto1 {
     font-family: 'K2D', sans-serif;
-    font-size: 20px;
+    font-size: px;
     color: #5D5D5D;
     font-size: 22px;
     font-weight: 400;
