@@ -2,162 +2,133 @@ body {
     margin: 0;
     padding-top: 80px;
     background-color: #F5F5F5;
-
     overflow-x: hidden;
 }
 
-/* HEADER */
 header {
     position: fixed;
     top: 0;
     left: 0;
-
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 80px;
     box-sizing: border-box;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     padding: 0 40px;
-
     background-color: #FDFDFD;
     border-bottom: 2px solid #eaeaea;
-    z-index: 1000;
-}   
+}
 
-/* LOGO */
 .imagotipo img {
     width: 60px;
     height: auto;
 }
 
-/* NOME DA LOGO */
 .logotipo img {
     width: 120px;
     height: auto;
     margin-left: -120px;
 }
 
-/* MENU */
 .menu {
     display: flex;
     align-items: center;
     gap: 30px;
-
     margin-left: 400px;
 }
 
 .menu a {
-    white-space: nowrap;
-
+    font-family: "K2D", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'K2D', sans-serif;
-
     color: #5D5D5D;
     text-decoration: none;
+    white-space: nowrap;
 }
 
-/* BOTÃO DO HEADER */
 .botHeader {
-    border: none;
-    border-radius: 8px;
-
-    background: linear-gradient(to right, #6732FF, #3E1E99);
-    color: white;
-
     width: 160px;
     height: 35px;
-
-    font-size: 16px;
     padding-bottom: 3px;
-    font-family: 'K2D', sans-serif;
+    background: linear-gradient(to right, #6732FF, #3E1E99);
+    border: none;
+    border-radius: 8px;
+    font-family: "K2D", sans-serif;
+    font-size: 16px;
+    color: white;
 }
 
-.foto1 img{
+.foto1 img {
+    position: absolute;
     width: 950px;
     height: auto;
-    position: absolute;
-
-    margin-left: 650px;
     margin-top: -74px;
-    
+    margin-left: 650px;
 }
 
-
-/* PRIMEIRO BLOCO */
 .bloco1 {
+    position: relative;
     width: 100%;
     height: 650px;
-    position: relative;
-
     background: linear-gradient(to right, #21014F 45%, transparent 70%);
 }
 
 .imagemBLoco1 img {
+    position: absolute;
+    right: 0;
+    z-index: -1;
     width: 1300px;
     height: auto;
-    position: absolute;
-    z-index: -1;
-
-    right: 0;
     margin-top: -276px;
-
-    
 }
 
 .titulo {
-    font-family: 'K2D', sans-serif;
+    margin-left: 70px;
+    font-family: "K2D", sans-serif;
     font-size: 70px;
     color: #360082;
-
-    margin-left: 70px;
 }
 
 .texto1 {
-    font-family: 'K2D', sans-serif;
+    margin-left: 70px;
+    font-family: "K2D", sans-serif;
     font-size: px;
-    color: #5D5D5D;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
-
-    margin-left: 70px;
+    color: #5D5D5D;
 }
 
 .inventraTexto {
-    font-family: 'K2D', sans-serif;
+    font-family: "K2D", sans-serif;
     font-size: 70px;
-    color: #360082;
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.5;
-
     font-weight: bold;
-
+    line-height: 1.5;
+    color: #360082;
 }
 
 .comeceGratuitamente {
-    font-family: 'K2D', sans-serif;
     display: flex;
-    white-space: nowrap;
     align-items: center;
-    border: none;
     width: 280px;
     height: 50px;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 20px;
-    background-color: #FFDC32;
-    color: #360082;
-
     margin-top: 60px;
     margin-left: 70px;
     padding-right: 40px;
     padding-bottom: 2px;
     padding-left: 20px;
+    background-color: #FFDC32;
+    border: none;
+    border-radius: 8px;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #360082;
+    white-space: nowrap;
 }
 
 .comeceGratuitamente img {
@@ -173,173 +144,143 @@ header {
 }
 
 .bloco2 {
-    width: 100%;
-    height: 1900px;
-    background-color: #FFFFFF;
     position: absolute;
     z-index: 1;
-
+    width: 100%;
+    height: 1900px;
     margin-top: 31px;
+    background-color: #FFFFFF;
 }
 
 .texto2 {
-    font-family: 'K2D', sans-serif;
-    color: #360082;
-    font-size: 45px;
-    font-weight: 600;
     position: relative;
     z-index: 2;
-
     margin-top: 100px;
+    font-family: "K2D", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color: #360082;
     text-align: center;
 }
 
 .texto3 {
-    font-family: 'K2D', sans-serif;
+    position: relative;
+    z-index: 2;
+    margin-left: 70px;
+    font-family: "K2D", sans-serif;
     font-size: 20px;
-    color: #5D5D5D;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
-
-    margin-left: 70px;
+    color: #5D5D5D;
     text-align: center;
-
-    position: relative;
-    z-index: 2;
 }
 
 .retang1 {
-    width: 400px;
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: center;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    width: 400px;
+    height: 180px;
     margin-top: 65px;
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .retang2 {
-    width: 400px;
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: center;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    width: 400px;
+    height: 180px;
     margin-top: 40px;
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .retang3 {
-    width: 400px;
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: left;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: left;
+    align-content: center;
+    width: 400px;
+    height: 180px;
     margin-top: -407px;
     margin-left: 120px;
-
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .retang4 {
-    width: 400px;
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: left;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: left;
+    align-content: center;
+    width: 400px;
+    height: 180px;
     margin-top: 40px;
     margin-left: 120px;
-
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .retang5 {
-    width: 400px;
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: left;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: left;
+    align-content: center;
+    width: 400px;
+    height: 180px;
     margin-top: -407px;
     margin-left: 1000px;
-
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .retang6 {
-    width: 400px;
-    height: 180px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: left;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: left;
+    align-content: center;
+    width: 400px;
+    height: 180px;
     margin-top: 41px;
     margin-left: 1000px;
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .BigNumbers {
-    width: 100%;
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
     gap: 0px;
-
-    background: linear-gradient(to right, #360182, #5A01D9);
-
-    padding: 40px 0;
+    width: 100%;
     margin-top: 100px;
-
-    z-index: 2;
+    padding: 40px 0;
+    background: linear-gradient(to right, #360182, #5A01D9);
 }
 
 .number {
@@ -347,314 +288,279 @@ header {
 }
 
 .number span {
-    font-family: 'K2D', sans-serif;
+    font-family: "K2D", sans-serif;
     font-size: 60px;
     font-weight: 500;
-    color: #FFD012
+    color: #FFD012;
 }
 
 .number p {
-    font-family: 'K2D', sans-serif;
+    margin-top: 0px;
+    font-family: "K2D", sans-serif;
     font-size: 20px;
     color: #F5F0F0;
-
-    margin-top: 0px;
 }
 
 .imagem4 {
+    position: absolute;
+    right: 0;
+    z-index: 2;
     width: 600px;
     height: auto;
-    position: absolute;
-    z-index: 2;
-
-    right: 0;
 }
 
 .texto4 {
-    font-family: 'K2D', sans-serif;
-    color: #360082;
-    font-size: 50px;
-    font-weight: 600;
     position: relative;
     z-index: 2;
-
     margin-top: 50px;
     margin-left: 210px;
-
+    font-family: "K2D", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #360082;
 }
 
 .texto5 {
-    font-family: 'K2D', sans-serif;
-    color: #5D5D5D;
+    position: relative;
+    z-index: 2;
+    margin-left: 210px;
+    font-family: "K2D", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
-    position: relative;
-    z-index: 2;
-
-    margin-left: 210px;
+    color: #5D5D5D;
 }
 
 .texto6 {
-    font-family: 'K2D', sans-serif;
-    color: #360082;
-    font-size: 50px;
-    font-weight: 600;
     position: relative;
     z-index: 2;
-
     margin-top: 40px;
     margin-left: 210px;
+    font-family: "K2D", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #360082;
 }
 
 .b1 {
-    width: 430px;
-    height: 150px;
-    background-color: #ffffff;
-    display: flex;
-    justify-self: center;
-
-    align-content: center;
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    width: 430px;
+    height: 150px;
     margin-top: px;
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .b2 {
-    width: 430px;
-    height: 150px;
-    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-self: left;
-
     align-content: center;
-    position: relative;
-    z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
-    margin-top: -153px;
-    margin-left: 70px;
-}
-
-.b3 {   
     width: 430px;
     height: 150px;
+    margin-top: -153px;
+    margin-left: 70px;
     background-color: #ffffff;
-    display: flex;
-    justify-self: right;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
 
-    align-content: center;
+.b3 {
     position: relative;
     z-index: 2;
-
-    border-radius: 19px;
-    border: 2px solid #D5D5D5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-self: right;
+    align-content: center;
+    width: 430px;
+    height: 150px;
     margin-top: -153px;
     margin-right: 70px;
+    background-color: #ffffff;
+    border: 2px solid #D5D5D5;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .bloco4 {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 582px;
-    position: relative;
     margin-top: 42px;
-
     background-color: #ffffff;
-    z-index: 1;
 }
 
 .imagemGrupo {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    display: block;
     width: 900px;
     height: auto;
-    display: block;
     margin-top: -139.7px;
-    left: 0;
-
-    position: absolute;
-    z-index: 2;
 }
 
 .texto7 {
-    font-family: 'K2D', sans-serif;
-    color: #360082;
+    position: relative;
+    z-index: 2;
+    margin-left: 800px;
+    padding: 80px;
+    font-family: "K2D", sans-serif;
     font-size: 50px;
     font-weight: 600;
-    position: relative;
+    color: #360082;
     text-align: center;
-    z-index: 2;
-
-    padding: 80px;
-    margin-left: 800px;
 }
 
 .texto8 {
-    font-family: 'K2D', sans-serif;
-    color: #5D5D5D;
+    position: relative;
+    z-index: 2;
+    margin-top: -70px;
+    margin-left: 910px;
+    font-family: "K2D", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
-    position: relative;
-    z-index: 2;
-
-    margin-left: 910px;
-    margin-top: -70px;
+    color: #5D5D5D;
 }
 
 .bloco5 {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 503px;
-    position: relative;
     margin-top: 42px;
-
     background-color: #F5F5F5;
-    z-index: 1;
 }
 
 .imagem5 {
+    position: absolute;
+    right: 0;
     width: 800px;
     height: auto;
-    
-    right: 0;
     margin-top: -137px;
-
-    position: absolute;
 }
 
 .texto9 {
-    font-family: 'K2D', sans-serif;
-    color: #360082;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    padding-left: 80px;
+    font-family: "K2D", sans-serif;
     font-size: 50px;
     font-weight: 600;
-    position: relative;
-    z-index: 2;
-
-    padding-left: 80px;
-    left: 0;
+    color: #360082;
 }
 
 .texto10 {
-    font-family: 'K2D', sans-serif;
-    color: #5D5D5D;
+    position: relative;
+    z-index: 2;
+    margin-left: 70px;
+    font-family: "K2D", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
-    position: relative;
-    z-index: 2;
-
-    margin-left: 70px;
+    color: #5D5D5D;
 }
 
 .entreEmContato {
-    font-family: 'K2D', sans-serif;
+    z-index: 1;
     display: flex;
-    white-space: nowrap;
     align-items: center;
-    border: none;
     width: 230px;
     height: 50px;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 20px;
-    background-color: #FFDC32;
-    color: #360082;
-
-    z-index: 1;
-
-    margin-left: 70px;
     margin-top: 50px;
+    margin-left: 70px;
     padding: 20px 40px;
+    background-color: #FFDC32;
+    border: none;
+    border-radius: 8px;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #360082;
+    white-space: nowrap;
 }
 
 .bloco6 {
-    width: 100%;
-    height: 303px;
     position: relative;
-    margin-top: 42px;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
+    height: 303px;
+    margin-top: 42px;
     background: linear-gradient(to right, #B77FFF, #FFD716);
-    z-index: 1;
 }
 
 .texto11 {
-    font-family: 'K2D', sans-serif;
-    color: #360082;
+    position: relative;
+    z-index: 2;
+    margin-top: -45px;
+    font-family: "K2D", sans-serif;
     font-size: 30px;
     font-weight: 600;
-    position: relative;
+    color: #360082;
     text-align: center;
-    z-index: 2;
-
-    margin-top: -45px;
 }
 
 .imagem6 {
-    width: 250px;
-    height: auto;
-
-    margin-top: 170px;
-
     position: absolute;
     z-index: 2;
+    width: 250px;
+    height: auto;
+    margin-top: 170px;
 }
 
 .bloco7 {
-    width: 100%;
-    height: 410px;
     position: relative;
-    margin-top: 42px;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    z-index: 1;
+    width: 100%;
+    height: 410px;
+    margin-top: 42px;
 }
 
 .card1 {
     width: 1000px;
     height: 330px;
-    background: linear-gradient(to left, #370184, #5A01D9);
-
     margin-bottom: 50px;
-
+    background: linear-gradient(to left, #370184, #5A01D9);
     border-radius: 20px;
-
     box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cardTit {
-    font-family: 'K2D', sans-serif;
-    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    font-family: "K2D", sans-serif;
     font-size: 40px;
     font-weight: 500;
-    position: relative;
+    color: #ffffff;
     text-align: center;
-    z-index: 2;
 }
 
 .cardSubt {
-    font-family: 'K2D', sans-serif;
-    color: #DFDFDF;
+    position: relative;
+    z-index: 2;
+    font-family: "K2D", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
+    color: #DFDFDF;
     text-align: center;
-    position: relative;
-    z-index: 2;
 }
-
 
 .Botoes {
     display: flex;
@@ -664,50 +570,49 @@ header {
 }
 
 .cardBot1 {
-    font-family: 'K2D', sans-serif;
     align-items: center;
-    border: none;
     width: 200px;
     height: 50px;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 20px;
     background-color: #FFDC32;
+    border: none;
+    border-radius: 8px;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: #360082;
 }
 
 .cardBot2 {
-    font-family: 'K2D', sans-serif;
     align-items: center;
-    border: none;
     width: 200px;
     height: 50px;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 20px;
     background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: #5F1AD2;
 }
 
 .cardSub2 {
-    font-family: 'K2D', sans-serif;
-    color: #DFDFDF;
+    position: relative;
+    z-index: 2;
+    font-family: "K2D", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    color: #DFDFDF;
     text-align: center;
-    position: relative;
-    z-index: 2;
 }
-
 
 .rodape {
     width: 100%;
     box-sizing: border-box;
     padding: 50px 70px 20px;
     background: linear-gradient(to right, #360182, #4A149F);
+    font-family: "K2D", sans-serif;
     color: #FFFFFF;
-    font-family: 'K2D', sans-serif;
 }
 
 .rodapeConteudo {
@@ -725,17 +630,17 @@ header {
 }
 
 .rodapeLogo img {
+    display: block;
     width: 150px;
     height: auto;
-    display: block;
     margin-bottom: 15px;
 }
 
 .rodapeLogo p {
-    color: #DFDFDF;
-    font-size: 14px;
-    line-height: 1.7;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #DFDFDF;
 }
 
 .rodapeColuna {
@@ -747,15 +652,15 @@ header {
 }
 
 .rodapeColuna h3 {
-    color: #FFDC32;
-    font-size: 18px;
-    font-weight: 500;
     margin: 0 0 8px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #FFDC32;
 }
 
 .rodapeColuna a {
+    font-size: 16px;
     color: #FFFFFF;
-    font-size: 14px;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -765,16 +670,16 @@ header {
 }
 
 .rodapeColuna p {
-    color: #DFDFDF;
-    font-size: 14px;
-    line-height: 1.7;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #DFDFDF;
 }
 
 .rodapeColuna .linkContato {
-    color: #FFDC32;
-    font-weight: 500;
     margin-top: 5px;
+    font-weight: 500;
+    color: #FFDC32;
 }
 
 .rodapeColuna .linkContato:hover {
@@ -782,51 +687,56 @@ header {
 }
 
 .rodapeInferior {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding-top: 18px;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .rodapeInferior p {
-    color: #DFDFDF;
-    font-size: 12px;
     margin: 0;
+    font-size: 14px;
+    color: #DFDFDF;
 }
 
 @media (max-width: 900px) {
-    .rodape {
-        padding: 40px 30px 20px;
-    }
 
-    .rodapeConteudo {
-        flex-wrap: wrap;
-        gap: 35px;
-    }
+.rodape {
+    padding: 40px 30px 20px;
+}
+
+.rodapeConteudo {
+    flex-wrap: wrap;
+    gap: 35px;
+}
 
     .rodapeLogo,
-    .rodapeColuna {
-        flex: 1 1 200px;
-    }
+
+.rodapeColuna {
+    flex: 1 1 200px;
+}
+
 }
 
 @media (max-width: 500px) {
-    .rodape {
-        padding: 35px 22px 20px;
-    }
 
-    .rodapeConteudo {
-        flex-direction: column;
-        gap: 30px;
-    }
+.rodape {
+    padding: 35px 22px 20px;
+}
 
-    .rodapeInferior {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+.rodapeConteudo {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rodapeInferior {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 }
